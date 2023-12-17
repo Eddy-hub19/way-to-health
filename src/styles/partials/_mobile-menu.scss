@@ -1,0 +1,113 @@
+.logo-mobile-menu {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 16px 0 13px 0;
+}
+
+.nav-menu-list {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav-menu-list-item {
+  margin-bottom: 24px;
+  &__link {
+    color: #121212;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.mobile-social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  svg {
+    fill: black;
+  }
+}
+
+.social-icons-list {
+  margin-top: 12px;
+  display: flex;
+  align-items: flex-start;
+  &__item {
+    margin-right: 24px;
+  }
+}
+
+.contact-info-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  &__title {
+    text-align: start;
+    color: #121212;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.contact-info-mobile-list {
+  display: flex;
+  margin-top: 12px;
+  gap: 40px;
+
+  &__item {
+    display: flex;
+    &__tel {
+      color: $Text-Black;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+.contact-email {
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+  display: flex;
+  text-align: start;
+  margin-top: 16px;
+
+  &__title {
+    color: #121212;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 12px;
+  }
+
+  &__link {
+    color: $Text-Black;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

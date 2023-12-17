@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@import "./utils/_reviews.scss";
+@import "./utils/_variables.scss";
+@import "./utils/_logo.scss";
+@import "./utils/_swiper.scss";
+@import "./partials/_header.scss";
+@import "./utils/hamburgers.css";
+@import "./partials/_hamburger.scss";
+@import "./partials/mobile-menu.scss";
+@import "./partials/_info.scss";
+@import "./partials/_our-initiatives.scss";
+@import "./partials/_quotes.scss";
+@import "./partials/_activity.scss";
+@import "./partials/_requisites.scss";
+@import "./partials/_footer.scss";
+@import "./partials/_mobile-menu.scss";
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  @include mobile {
+    padding: 0 20px;
+  }
+  @include tablet {
+    padding: 0 40px;
+  }
+
+  @include laptop {
+    padding: 0 80px;
+  }
+  @include desktop {
+    width: 1440px;
+    padding: 0 80px;
+  }
+}
+
+svg {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.current {
+  color: $hover-link;
+}
+
+.distance {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.btn {
+  background: $BTN-Blue;
+  color: $Text-White;
+  border: 2px solid $BTN-Blue;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+  transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+
+  @include mobile {
+    font-size: 14px;
+    padding: 15px;
+  }
+  @include tablet {
+    padding: 20px;
+  }
+  @include desktop {
+    padding: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border-radius: 12px;
+    border: 2px solid $BTN-Blue;
+    color: #40639b;
+  }
+}

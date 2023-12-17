@@ -1,0 +1,42 @@
+// _reviews.scss
+@mixin media-query($min-width, $max-width) {
+  @media (min-width: $min-width) and (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @include media-query(0px, 768px) {
+    @content;
+  }
+}
+
+@mixin mobile375 {
+  @include media-query(0px, 375px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @include media-query(769px, 1240px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @include media-query(1241px, 1440px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @include media-query(1441px, 2560px) {
+    @content;
+  }
+}
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

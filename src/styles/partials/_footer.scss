@@ -1,0 +1,131 @@
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  background: $Bg-neutrals;
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 51px;
+  color: #fff !important;
+}
+
+.footer-nav {
+  @include mobile {
+    display: grid;
+    grid-template-columns: 2fr; /* Одна колонка для .footer-nav */
+    grid-template-rows: auto; /* Автоматическая высота строк */
+    grid-gap: 10px; /* Расстояние между ячейками (если нужно) */
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff !important;
+}
+
+.footer-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    align-items: center;
+  }
+
+  &__addres {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 8px;
+    width: 205px;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__title {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+
+  &__tel {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+
+  &__link {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 16px;
+
+    &:hover,
+    &:focus {
+      color: $hover-link;
+    }
+  }
+}
+
+.social-icons-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.social-icons-title {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.copyright {
+  @include mobile {
+    display: none;
+  }
+  margin-top: 51px;
+  p {
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.wrap-footer-icons {
+  display: flex;
+}
+
+.test {
+  grid-row: span 2; /* Расширяем .test на две строки */
+}

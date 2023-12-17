@@ -1,0 +1,136 @@
+.our-initiatives {
+  background: linear-gradient(180deg, #f3f5fc 0%, rgba(216, 223, 236, 0) 100%);
+  font-family: Montserrat;
+  color: $Text-Blue;
+
+  img {
+    transition: transform ease 1.4s;
+
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+
+  @include mobile {
+    margin-top: 70px !important;
+    padding-top: 32px !important;
+  }
+
+  &__title {
+    color: $Text-Blue;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  &__descr {
+    color: $Text-Black;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    padding-bottom: 40px;
+  }
+
+  @include desktop {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+    &__title {
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      padding-bottom: 32px;
+    }
+
+    &__descr {
+      font-size: 18px;
+      line-height: 27px;
+      padding-bottom: 63px;
+    }
+  }
+}
+
+.our-initiatives-list {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @include laptop {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+
+  @include desktop {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 48px;
+  }
+
+  &__item {
+    background: #fff;
+    display: flex;
+    width: 407px;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex-shrink: 0;
+    border-radius: 8px;
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
+
+  }
+}
+
+.our-initiatives-card {
+  padding: 0 24px;
+  &__title {
+    color: $Text-Black;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 24px;
+  }
+
+  &__descr {
+    color: $Text-Black;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.4px;
+    padding-bottom: 17px;
+  }
+}
+
+.btn-all-projects {
+  margin-top: 48px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  line-height: normal;
+}

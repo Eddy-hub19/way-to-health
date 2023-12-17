@@ -1,0 +1,64 @@
+.quotes {
+  padding-top: 67px !important;
+  padding-bottom: 40px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  @include mobile {
+    display: block;
+  }
+}
+
+.quotes-wrap {
+  text-align: justify;
+  @include mobile {
+    width: 100%;
+  }
+
+  @include desktop {
+    width: 576px;
+  }
+}
+
+.quotes-text {
+  color: $Text-Black;
+
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 48px;
+
+  @include mobile {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+
+.author-wrap {
+  margin-top: 65px;
+  width: 100%;
+  text-align: end;
+}
+
+.author {
+  color: $Text-Black;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.author-text {
+  color: #595959; // Text-Placeholder,
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
