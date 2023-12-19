@@ -2,22 +2,32 @@
   @include mobile {
     display: none;
   }
+  @include tablet {
+    .logo-link {
+      @include center;
+    }
+  }
   @include laptop {
-    display: flex;
-    align-items: center;
+    .logo-link {
+      @include center;
+    }
   }
   @include desktop {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .logo-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
 
 .logo-mobile {
   @include mobile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .logo-mobile-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
   @include tablet {
     display: none;

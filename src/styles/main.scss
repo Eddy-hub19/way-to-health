@@ -28,15 +28,15 @@ a {
     padding: 0 20px;
   }
   @include tablet {
-    padding: 0 40px;
+    padding: 0 60px;
   }
 
   @include laptop {
     padding: 0 80px;
   }
   @include desktop {
-    width: 1440px;
     padding: 0 80px;
+    max-width: 1440px;
   }
 }
 

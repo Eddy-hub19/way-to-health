@@ -2,7 +2,7 @@
   padding-top: 80px;
   padding-bottom: 80px;
   border-radius: 12px;
-  background: #f6f7fb;
+  
 }
 
 .requisites-container {
@@ -53,6 +53,9 @@
 .requisites-wrap {
   display: flex;
   justify-content: space-around;
+  background: #f6f7fb;
+  padding-top: 80px;
+  padding-bottom: 80px;
   @include mobile {
     display: block;
   }

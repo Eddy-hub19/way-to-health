@@ -6,7 +6,7 @@
 }
 
 @mixin mobile {
-  @include media-query(0px, 768px) {
+  @include media-query(0px, 767px) {
     @content;
   }
 }
@@ -18,19 +18,19 @@
 }
 
 @mixin tablet {
-  @include media-query(769px, 1240px) {
+  @include media-query(768px, 1240px) {
     @content;
   }
 }
 
 @mixin laptop {
-  @include media-query(1241px, 1440px) {
+  @include media-query(1241px, 1439px) {
     @content;
   }
 }
 
 @mixin desktop {
-  @include media-query(1441px, 2560px) {
+  @include media-query(1440px, 2560px) {
     @content;
   }
 }
@@ -38,5 +38,4 @@
 @mixin center {
   display: flex;
   align-items: center;
-  justify-content: center;
 }

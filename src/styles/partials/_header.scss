@@ -3,7 +3,7 @@
   background: $Text-Blue;
   display: flex;
   justify-content: space-between;
-  @media screen and (min-width: 769px) and (max-width: 903px) {
+  @media screen and (min-width: 768px) and (max-width: 903px) {
     display: none;
   }
 
@@ -13,6 +13,9 @@
 }
 
 #header {
+  @include tablet {
+    padding: 30px 60px;
+  }
   @include laptop {
     padding: 30px 80px;
   }
@@ -21,8 +24,7 @@
   }
 }
 .header {
-  display: flex;
-  align-items: center;
+  @include center;
   justify-content: space-between;
   box-shadow: 0px 4px 14px 0px rgba(191, 191, 191, 0.25);
 
@@ -56,13 +58,33 @@
 }
 
 .lang {
-  padding: 0 5px;
   text-transform: uppercase;
+  @include center;
+
+  .lang-separator {
+    display: block;
+    width: 1px;
+    height: 30px;
+    background: #9fa5af;
+    margin: 0 5px;
+  }
+
+  .lang-localize {
+    color: $Text-Black;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    &:last-child {
+      color: #9fa5af;
+    }
+  }
 }
 
 .social-icons {
-  display: flex;
-  align-items: center;
+  @include center;
 
   li {
     margin-left: 24px;
@@ -74,8 +96,7 @@
 }
 
 .contact-info {
-  display: flex;
-  align-items: center;
+  @include center;
 
   svg {
     fill: white;
@@ -84,8 +105,7 @@
 }
 
 .contact-info-item {
-  display: flex;
-  align-items: center;
+  @include center;
   margin-right: 12px;
   &__phone,
   &__mail {

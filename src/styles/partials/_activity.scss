@@ -6,42 +6,80 @@
 
 .activity-list {
   display: flex;
+  justify-content: space-around;
   width: 100%;
 
+  &-title {
+    color: $Text-Blue;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 37px;
+  }
+
+  &-descr {
+    color: $Text-Black;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
   @include mobile {
-    &__item {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    @include mobile {
       align-items: center;
     }
 
-    display: flex;
-    flex-direction: column-reverse;
-
-    &-title {
-      color: $Text-Blue;
-      font-family: Montserrat;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      margin-top: 37px;
-    }
-
-    &-descr {
-      color: $Text-Black;
-      font-family: Montserrat;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 21px;
-      margin-top: 32px;
-      margin-bottom: 32px;
+    @include tablet {
+      align-items: center;
     }
   }
 
   img {
     width: -webkit-fill-available;
+  }
+
+  @include laptop {
+
+    &-title {
+      color: $Text-Blue;
+      font-family: Montserrat;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: 32px;
+      width: 438px;
+    }
+
+    &-descr {
+      width: 527px;
+      color: $Text-Black;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27px;
+      margin-bottom: 32px;
+    }
   }
 
   @include desktop {
@@ -53,6 +91,7 @@
       font-weight: 500;
       line-height: normal;
       margin-bottom: 32px;
+      width: 438px;
     }
 
     &-descr {

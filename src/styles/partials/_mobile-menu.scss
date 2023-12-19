@@ -3,6 +3,10 @@
   justify-content: space-between;
   border-bottom: 1px solid #eee;
   padding: 16px 0 13px 0;
+
+  @include tablet {
+    padding: 45px 0 13px 0;
+  }
 }
 
 .nav-menu-list {
@@ -10,6 +14,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+
 }
 
 .nav-menu-list-item {
@@ -21,6 +27,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    @include tablet {
+      font-size: 24px;
+    }
   }
 }
 
@@ -64,6 +74,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    @include tablet {
+      font-size: 22px;
+    }
   }
 }
 
@@ -81,6 +95,9 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      @include tablet {
+        font-size: 24px;
+      }
     }
   }
 }
@@ -100,6 +117,9 @@
     font-weight: 400;
     line-height: normal;
     margin-bottom: 12px;
+    @include tablet {
+      font-size: 22px;
+    }
   }
 
   &__link {
@@ -109,5 +129,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    @include tablet {
+      font-size: 24px;
+    }
   }
 }
