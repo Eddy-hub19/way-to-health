@@ -111,7 +111,10 @@
   display: block;
   text-align: center;
   width: 250px;
+  @include laptop {
+    margin-top: 34px;
+  }
   @include desktop {
-    margin-top: 50px;
+    margin-top: 34px;
   }
 }

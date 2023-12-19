@@ -1,12 +1,13 @@
 .requisites {
   padding-top: 80px;
   padding-bottom: 80px;
-  border-radius: 12px;
-  
 }
 
 .requisites-container {
   padding-bottom: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__title {
     color: $Text-Blue;
@@ -46,6 +47,8 @@
       font-style: normal;
       font-weight: 400;
       line-height: 27px;
+      width: 910px;
+      text-align: center;
     }
   }
 }
@@ -53,6 +56,7 @@
 .requisites-wrap {
   display: flex;
   justify-content: space-around;
+  border-radius: 12px;
   background: #f6f7fb;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -85,6 +89,7 @@
     font-weight: 500;
     line-height: 20.8px;
     margin-bottom: 12px;
+    padding-left: 40px;
   }
 
   &__info {
@@ -123,4 +128,8 @@
     cursor: pointer;
     margin-right: 16px;
   }
+}
+
+.-padding {
+  padding-left: 40px;
 }

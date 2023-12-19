@@ -10,11 +10,19 @@
 
 .footer-nav {
   @include mobile {
-    display: grid;
-    grid-template-columns: 2fr; /* Одна колонка для .footer-nav */
-    grid-template-rows: auto; /* Автоматическая высота строк */
-    grid-gap: 10px; /* Расстояние между ячейками (если нужно) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -46,6 +54,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+
+    @include mobile {
+      text-align: center;
+    }
   }
 
   &__title {
@@ -53,7 +65,7 @@
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 24px;
     margin-bottom: 16px;
   }

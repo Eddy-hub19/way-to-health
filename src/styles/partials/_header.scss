@@ -1,6 +1,8 @@
 .header-section {
   height: 40px;
-  background: $Text-Blue;
+  padding-left: 80px;
+  padding-right: 80px;
+  background: $Bg-neutrals;
   display: flex;
   justify-content: space-between;
   @media screen and (min-width: 768px) and (max-width: 903px) {
