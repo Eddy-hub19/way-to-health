@@ -9,24 +9,24 @@
 }
 
 .footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff !important;
+
   @include mobile {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   @include tablet {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 50px;
+    justify-items: center;
   }
-
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  color: #fff !important;
 }
 
 .footer-nav-item {
@@ -35,8 +35,6 @@
   align-items: baseline;
 
   @include mobile {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 32px;
     align-items: center;
   }
@@ -136,8 +134,4 @@
 
 .wrap-footer-icons {
   display: flex;
-}
-
-.test {
-  grid-row: span 2; /* Расширяем .test на две строки */
 }

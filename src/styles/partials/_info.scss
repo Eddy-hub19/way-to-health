@@ -98,11 +98,26 @@
   font-weight: 500;
   line-height: normal;
 
+  &:hover,
+  &:focus {
+    background: #567dc2;
+    color: #f9f9f9;
+    border: 2px solid #567dc2;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    font-family: Montserrat;
+    font-style: normal;
+    line-height: normal;
+    transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+  }
+
   @include laptop {
     padding: 20px !important;
     width: 250px;
   }
   @include desktop {
     width: 250px;
+    padding: 20px !important;
   }
 }
