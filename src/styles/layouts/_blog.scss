@@ -1,0 +1,34 @@
+.blog {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: darkcyan;
+}
+
+.breadcrumbs {
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  .breadcrumbs-wrap {
+    display: flex;
+
+    .breadcrumbs-link {
+      color: $Text-Black;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      &:last-child {
+        color: #818181;
+      }
+    }
+  }
+}
+
+.breadcrumbs-seperator {
+  padding: 0 12px;
+}
