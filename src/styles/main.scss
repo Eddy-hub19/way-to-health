@@ -1,13 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
+@import "./utils/hamburgers.css";
 @import "./utils/_reviews.scss";
 @import "./utils/_variables.scss";
 @import "./utils/_logo.scss";
 @import "./utils/_swiper.scss";
+@import "./utils/_breadcrumbs.scss";
+
 @import "./partials/_header.scss";
-@import "./utils/hamburgers.css";
 @import "./partials/_hamburger.scss";
-@import "./partials/mobile-menu.scss";
+@import "./partials/_mobile-menu.scss";
 @import "./partials/_info.scss";
 @import "./partials/_our-initiatives.scss";
 @import "./partials/_quotes.scss";
@@ -17,7 +19,8 @@
 @import "./partials/_mobile-menu.scss";
 
 // blog
-@import "./layouts/_blog.scss";
+@import "./layouts/blog/blog";
+@import "./layouts/blog/materials";
 
 a {
   color: black;
@@ -42,7 +45,6 @@ a {
   @include tablet {
     padding: 0 60px;
   }
-
   @include laptop {
     padding: 0 80px;
   }

@@ -1,19 +1,14 @@
-.blog {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background: darkcyan;
-}
-
 .breadcrumbs {
   padding-left: 80px;
   padding-right: 80px;
   display: flex;
   padding-top: 24px;
-  padding-bottom: 24px;
 
   .breadcrumbs-wrap {
     display: flex;
-
+    &__seperator {
+      padding: 0 12px;
+    }
     .breadcrumbs-link {
       color: $Text-Black;
       font-family: Montserrat;
@@ -27,8 +22,4 @@
       }
     }
   }
-}
-
-.breadcrumbs-seperator {
-  padding: 0 12px;
 }
