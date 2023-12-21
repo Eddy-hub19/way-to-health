@@ -54,6 +54,14 @@ a {
   }
 }
 
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+  margin: 0 auto;
+}
+
 svg {
   max-width: 100%;
   padding: 0;

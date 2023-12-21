@@ -93,7 +93,11 @@
   }
   svg {
     fill: white;
-    color: white;
+
+    &:hover,
+    &:focus {
+      fill: #b3c7df !important;
+    }
   }
 }
 

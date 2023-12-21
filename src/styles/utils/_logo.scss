@@ -1,4 +1,18 @@
 .logo {
+  .logo-title {
+    font-family: Montserrat;
+  }
+  .logo-subtitle {
+    font-weight: 500;
+    line-height: normal;
+    font-family: Montserrat;
+    margin-top: 1px;
+  }
+
+  span {
+    padding-left: 4px;
+  }
+
   @include mobile {
     display: none;
   }
@@ -41,11 +55,16 @@
 }
 
 .logo-wrap {
+  padding-left: 4px;
   &__title {
     font-size: 12px;
   }
 
   &__subtitle {
     font-size: 12px;
+    font-weight: 500;
+    line-height: normal;
+    font-family: Montserrat;
+    margin-top: 1px;
   }
 }
