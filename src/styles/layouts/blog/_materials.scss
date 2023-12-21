@@ -94,3 +94,54 @@
     }
   }
 }
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+
+  .pagination-item {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    margin-left: 5px;
+    position: relative;
+    border-radius: 100px;
+
+    &__link {
+      color: $Text-Black;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  svg {
+    cursor: pointer;
+    font-size: 24px;
+  }
+}
+
+.pagination-item-first {
+  width: 40px;
+  height: 40px;
+  background: #567dc2;
+
+  a {
+    color: white !important;
+  }
+}
+
+.icon-left {
+  margin-right: 24px;
+}
+
+.icon-right {
+  margin-left: 24px;
+}
