@@ -1,0 +1,54 @@
+h1 {
+  text-align: center;
+}
+
+.public-offer {
+  padding-top: 80px;
+
+  &__title {
+    color: #07285d;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 64px;
+  }
+}
+
+.public-offer-list-item {
+  margin-bottom: 48px;
+
+  &__descr {
+    color: $Text-Black;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.8px;
+  }
+}
+
+.public-offer h2 {
+  color: #080808;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31.2px;
+  margin-bottom: 24px;
+}
+
+.public-offer p {
+  color: #080808;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.8px;
+}
+
+ol {
+  list-style-type: disc;
+  list-style: inside;
+}
