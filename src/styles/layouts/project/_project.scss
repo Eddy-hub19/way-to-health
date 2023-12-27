@@ -1,6 +1,10 @@
 .project {
   padding-top: 80px;
 
+  @include mobile {
+    padding-top: 35px;
+  }
+
   .project-wrap {
     display: flex;
     flex-direction: column;
@@ -18,17 +22,12 @@
     margin-bottom: 32px;
 
     @include mobile {
-      color: $Text-Blue;
-      font-family: Montserrat;
       font-size: 24px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
     }
   }
 
   &__descr {
-    // min-width: 636px;
+    width: 636px;
 
     color: $Text;
     font-family: Montserrat;
@@ -37,6 +36,13 @@
     font-weight: 400;
     line-height: 30px;
     margin-bottom: 50px;
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 60px;
+      width: 100%;
+    }
   }
 
   img {
@@ -49,6 +55,10 @@
 .photos {
   padding-top: 125px;
   padding-bottom: 173px;
+  @include mobile {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
 }
 
 .photos-list {
@@ -59,10 +69,15 @@
   gap: 30px;
 
   &__item {
-    // min-width: 406px;
+    width: 406px;
+    // align-items: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    @include mobile {
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 32px;
+    }
   }
 
   &__descr {
@@ -73,14 +88,60 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    @include mobile {
+      font-size: 16px;
+    }
   }
 }
 
 .wrap-quotes {
-  // min-width: 904px;
+  max-width: 904px;
   text-align: center;
 }
 
 .quotes-distance {
   margin-bottom: 173px;
+}
+
+.quotes-project {
+  .author-wrap {
+    margin-top: 37px;
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  @include mobile {
+    .quotes-text {
+      color: $Text-Black;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+    }
+
+    .author {
+      color: $Text-Black;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 21px;
+    }
+
+    .author-text {
+      color: #818181;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+    }
+  }
 }
