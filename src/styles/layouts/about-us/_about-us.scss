@@ -52,8 +52,11 @@
     justify-content: center;
     align-items: center;
 
+    @include laptop {
+      width: calc(100% / 3 - 30px);
+    }
     @include tablet {
-      width: calc(80% / 2 - 30px);
+      width: calc(100% / 2 - 30px);
     }
     @include mobile {
       width: 100%;
