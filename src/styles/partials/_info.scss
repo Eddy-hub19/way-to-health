@@ -15,9 +15,7 @@
   align-items: flex-start;
   padding: 80px 0px 100px 0px !important;
 
-  @include laptop {
-    margin-left: 110px !important;
-  }
+  @include laptop;
   @include desktop {
     margin-left: 110px !important;
   }
@@ -32,16 +30,7 @@
   line-height: 33.6px;
   padding-bottom: 32px;
 
-  @include laptop {
-    color: $Text-Blue;
-    font-family: Montserrat;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 67.2px;
-    max-width: 731px;
-  }
-
+  @include laptop;
   @include desktop {
     color: $Text-Blue;
     font-family: Montserrat;
@@ -91,7 +80,7 @@
   width: auto;
   border-radius: 12px;
   border: 2px solid $BTN-Blue;
-  color: #40639b; // BTN-Blue-2
+  color: $Hover-Link;
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
@@ -100,9 +89,9 @@
 
   &:hover,
   &:focus {
-    background: #567dc2;
-    color: #f9f9f9;
-    border: 2px solid #567dc2;
+    background: $BTN-Blue;
+    color: $Text-White;
+    border: 2px solid $BTN-Blue;
     gap: 10px;
     padding: 10px;
     border-radius: 12px;
@@ -112,10 +101,7 @@
     transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
   }
 
-  @include laptop {
-    padding: 20px !important;
-    width: 250px;
-  }
+  @include laptop;
   @include desktop {
     width: 250px;
     padding: 20px !important;

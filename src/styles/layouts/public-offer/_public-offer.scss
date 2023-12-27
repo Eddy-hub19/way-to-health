@@ -6,13 +6,23 @@ h1 {
   padding-top: 80px;
 
   &__title {
-    color: #07285d;
+    color: $Text-Blue;
     font-family: Montserrat;
     font-size: 48px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     padding-bottom: 64px;
+
+    @include mobile {
+      font-size: 24px;
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+  }
+
+  .public-offer-link {
+    text-decoration: underline;
   }
 }
 
@@ -30,17 +40,37 @@ h1 {
 }
 
 .public-offer h2 {
-  color: #080808;
+  color: $Text-Black;
   font-family: Montserrat;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 31.2px;
   margin-bottom: 24px;
+
+  @include mobile {
+    color: $Text-Black;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .public-offer p {
-  color: #080808;
+  color: $Text-Black;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.8px;
+
+  @include mobile {
+    min-width: 335px;
+    font-size: 14px;
+    line-height: 18.2px;
+  }
+}
+.pawn {
+  color: $Text-Black;
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
@@ -51,4 +81,15 @@ h1 {
 ol {
   list-style-type: disc;
   list-style: inside;
+  color: $Text-Black;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.8px;
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 18.2px;
+  }
 }

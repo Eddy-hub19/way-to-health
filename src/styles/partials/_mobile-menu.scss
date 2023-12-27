@@ -21,7 +21,7 @@
 .nav-menu-list-item {
   margin-bottom: 24px;
   &__link {
-    color: #121212;
+    color: $Text;
     font-family: Inter;
     font-size: 14px;
     font-style: normal;
@@ -68,7 +68,7 @@
 
   &__title {
     text-align: start;
-    color: #121212;
+    color: $Text;
     font-family: Inter;
     font-size: 12px;
     font-style: normal;
@@ -110,7 +110,7 @@
   margin-top: 16px;
 
   &__title {
-    color: #121212;
+    color: $Text;
     font-family: Inter;
     font-size: 12px;
     font-style: normal;

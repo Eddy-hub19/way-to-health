@@ -75,7 +75,7 @@ svg {
 }
 
 .current {
-  color: $hover-link;
+  color: $Hover-Link;
 }
 
 .distance {
@@ -111,6 +111,6 @@ svg {
     background-color: transparent;
     border-radius: 12px;
     border: 2px solid $BTN-Blue;
-    color: #40639b;
+    color: $Hover-Link;
   }
 }

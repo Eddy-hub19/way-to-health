@@ -16,12 +16,21 @@
     font-weight: 500;
     line-height: normal;
     margin-bottom: 32px;
+
+    @include mobile {
+      color: $Text-Blue;
+      font-family: Montserrat;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
   }
 
   &__descr {
-    width: 636px;
+    // min-width: 636px;
 
-    color: #121212;
+    color: $Text;
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
@@ -50,7 +59,7 @@
   gap: 30px;
 
   &__item {
-    width: 406px;
+    // min-width: 406px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -68,10 +77,10 @@
 }
 
 .wrap-quotes {
-  width: 904px;
+  // min-width: 904px;
   text-align: center;
 }
 
-.quotes-distance{
+.quotes-distance {
   margin-bottom: 173px;
 }

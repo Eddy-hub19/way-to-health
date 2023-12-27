@@ -1,8 +1,5 @@
 .blog {
   margin: 0 auto;
-  @include mobile {
-    padding-top: 35px;
-  }
 
   &__title {
     text-align: center;
@@ -26,14 +23,13 @@
   .blog-wrap {
     max-width: 601px;
     margin-bottom: 32px;
-    @include laptop {
-      margin-bottom: 48px;
-    }
+    @include laptop;
     @include desktop {
       margin-bottom: 48px;
     }
+
     &__title {
-      color: #121212;
+      color: $Text;
       font-family: Montserrat;
       font-size: 24px;
       font-style: normal;
@@ -41,24 +37,20 @@
       line-height: normal;
       margin-bottom: 16px;
 
-      @include laptop {
-        font-size: 36px;
-      }
+      @include laptop;
       @include desktop {
         font-size: 36px;
       }
     }
     &__descr {
-      color: #121212;
+      color: $Text;
       font-family: Montserrat;
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
 
-      @include laptop {
-        font-size: 20px;
-      }
+      @include laptop;
       @include desktop {
         font-size: 20px;
       }
