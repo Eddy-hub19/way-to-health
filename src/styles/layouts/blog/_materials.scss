@@ -80,19 +80,23 @@
       margin-bottom: 16px;
     }
   }
+}
 
-  .data-wrap {
-    margin-top: 20px;
+.data-wrap {
+  margin-top: 20px;
 
-    .data {
-      color: #818181;
-      font-family: Montserrat;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
+  .data {
+    color: #818181;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
+}
+
+.materials-list-link {
+  display: flex;
 }
 
 .pagination {

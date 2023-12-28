@@ -1,25 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
 @import "./utils/hamburgers.css";
-@import "./utils/_reviews.scss";
-@import "./utils/_variables.scss";
-@import "./utils/_logo.scss";
-@import "./utils/_swiper.scss";
-@import "./utils/_breadcrumbs.scss";
+@import "./utils/_reviews";
+@import "./utils/_variables";
+@import "./utils/_logo";
+@import "./utils/_swiper";
+@import "./utils/_breadcrumbs";
 
-@import "./partials/_header.scss";
-@import "./partials/_hamburger.scss";
-@import "./partials/_mobile-menu.scss";
-@import "./partials/_info.scss";
-@import "./partials/_our-initiatives.scss";
-@import "./partials/_quotes.scss";
-@import "./partials/_activity.scss";
-@import "./partials/_requisites.scss";
-@import "./partials/_footer.scss";
-@import "./partials/_mobile-menu.scss";
+@import "./partials/_header";
+@import "./partials/_hamburger";
+@import "./partials/_mobile-menu";
+@import "./partials/_info";
+@import "./partials/_our-initiatives";
+@import "./partials/_quotes";
+@import "./partials/_activity";
+@import "./partials/_requisites";
+@import "./partials/_footer";
+@import "./partials/_mobile-menu";
 
 // blog
 @import "./layouts/blog/blog";
+@import "./layouts/blog/blog-project";
 @import "./layouts/blog/materials";
 
 // project
@@ -66,7 +67,7 @@ a {
   }
 }
 
-.content{
+.content {
   display: flex;
   justify-content: space-between;
   align-items: center;
