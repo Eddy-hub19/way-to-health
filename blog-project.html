@@ -278,32 +278,35 @@
         <div class="content-bg">
           <form action="#" method="post" class="form">
             <div class="comments-wrap">
-              <div>
+              <div class="wrap-label-name">
                 <label for="name">Ім’я*</label>
                 <input type="text" id="name" name="name" placeholder="Як до Вас звертатись" required>
               </div>
-              <div>
+              <div class="wrap-label-email">
                 <label for="email">Імейл*</label>
                 <input type="email" id="email" name="email" placeholder="Як до Вас звертатись" required>
               </div>
             </div>
-            <div>
+            <div class="wrap-label-comments">
               <label for="comment">Коментар</label>
-              <textarea id="comment" name="comment" rows="4"></textarea>
+              <textarea id="comment" name="comment" rows="4"
+                placeholder="Напишіть Ваше повідомлення в цьому полі"></textarea>
             </div>
-            <div>
+            <div class="wrap-label-site">
               <label for="website">Сайт</label>
               <input type="text" id="website" name="website">
             </div>
 
-            <label class="" style="display: flex;">
+            <label class="wrap-label-save-info">
               <div class="save_info">
-                <input type="checkbox" name="save_info"> Зберегти моє ім’я, e-mail, та адресу сайту в цьому браузері для
-                моїх подальших коментарів.
+                <input type="checkbox" name="save_info">
+                <span>Зберегти моє ім’я, e-mail, та адресу сайту в цьому браузері для
+                  моїх подальших коментарів.</span>
               </div>
             </label>
-
-            <button class="btn" type="submit">Опублікувати коментар</button>
+            <div class="wrap-comments-btn">
+              <button class="btn" type="submit">Опублікувати коментар</button>
+            </div>
           </form>
         </div>
 

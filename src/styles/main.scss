@@ -35,6 +35,9 @@
 // contacts
 @import "./layouts/contacts/contacts";
 
+// autobiography
+@import "./layouts/autobiography/autobiography";
+
 a {
   color: black;
   text-decoration: none;
@@ -95,6 +98,7 @@ svg {
 }
 
 .btn {
+  cursor: pointer;
   background: $BTN-Blue;
   color: $Text-White;
   border: 2px solid $BTN-Blue;

@@ -1,0 +1,80 @@
+.autobiography {
+  padding-top: 32px;
+  text-align: center;
+
+  @include mobile {
+    padding-top: 35px;
+  }
+
+  &__title {
+    color: $Text-Blue;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 52px;
+    @include mobile {
+      font-size: 24px;
+      margin-bottom: 34px;
+    }
+  }
+
+  &__descr {
+    color: $Text-Black;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+
+    @include mobile {
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.autobiography-wrap {
+  display: flex;
+  justify-content: center;
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.autobiography-content {
+  max-width: 625px;
+}
+
+.autobiography-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .autobiography-list-item {
+    &:first-child {
+      margin-top: 71px;
+    }
+    margin-bottom: 64px;
+
+    &__descr {
+      color: $Text-Black;
+      font-family: Montserrat;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 36px;
+      text-align: left;
+      
+      @include mobile {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+  }
+}

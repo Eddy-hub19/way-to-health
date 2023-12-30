@@ -1,16 +1,44 @@
-.contacts-list{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.contacts {
+  margin-top: 35px;
+  &__title {
+    color: $Text-Blue;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.contacts-list {
+  margin: 0 auto;
+  max-width: 840px;
   padding-top: 40px;
   padding-bottom: 40px;
-  &__item {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 
-    &--content{
+  &__subtitle {
+    color: $Text-Black;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 33px;
+  }
+
+  &__content {
+    max-width: 845px;
+  }
+
+  &__item {
+
+    &--content {
       display: flex;
     }
   }
+}
+
+.maps {
+  display: flex;
+  margin-bottom: 111px;
 }

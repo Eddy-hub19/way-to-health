@@ -9,7 +9,11 @@
     line-height: normal;
     padding-top: 35px;
     text-align: left;
-    width: 845px;
+
+    @include tablet;
+    @include desktop {
+      width: 845px;
+    }
 
     @include mobile {
       font-size: 24px;
@@ -19,9 +23,20 @@
   .blog-project-list {
     padding-top: 84px;
 
+    @include mobile {
+      padding-top: 38px;
+    }
+
     .blog-project-list-item {
       display: flex;
       gap: 30px;
+
+      @include mobile {
+        flex-direction: column;
+      }
+      @include tablet {
+        flex-direction: column;
+      }
 
       &__descr {
         color: $Text-Black;
@@ -30,9 +45,13 @@
         font-style: normal;
         font-weight: 400;
         line-height: 22.4px;
-        width: 516px;
-        height: 327px;
+
         flex-shrink: 0;
+        @include tablet;
+        @include desktop {
+          width: 516px;
+          height: 327px;
+        }
       }
     }
   }
@@ -42,6 +61,13 @@
   padding-bottom: 100px;
   border-radius: 8px;
 
+  @include mobile {
+    padding-bottom: 96px;
+    .container {
+      padding: 0;
+    }
+  }
+
   &__title {
     color: $Text-Blue;
     font-family: Montserrat;
@@ -50,6 +76,10 @@
     font-weight: 500;
     line-height: normal;
     padding-bottom: 40px;
+
+    @include mobile {
+      font-size: 32px;
+    }
   }
 }
 
@@ -57,9 +87,17 @@
   display: flex;
   justify-content: space-around;
   gap: 30px;
+
+  @include mobile {
+    flex-direction: column;
+  }
 }
 
 .comments-info {
+  @include mobile {
+    padding: 10px;
+  }
+
   &__title {
     color: $Text-Blue;
     font-family: Montserrat;
@@ -68,6 +106,10 @@
     font-weight: 500;
     line-height: normal;
     margin-bottom: 12px;
+
+    @include mobile {
+      font-size: 20px;
+    }
   }
 
   &__descr {
@@ -79,6 +121,10 @@
     font-weight: 400;
     line-height: normal;
     margin-bottom: 40px;
+
+    @include mobile {
+      font-size: 12px;
+    }
   }
 }
 
@@ -94,15 +140,26 @@ label {
 
 input,
 textarea {
+  resize: none;
   width: 100%;
   box-sizing: border-box;
   display: flex;
-  padding: 10px 16px;
   align-items: center;
+  padding: 15px 16px;
   gap: 10px;
   border-radius: 8px;
-  border: 1px solid var(--Stroke, #d0d0d0);
+  border: 1px solid $Stroke;
   background: #fff;
+  color: $Text-Placeholder;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @include mobile {
+    font-size: 12px;
+  }
 }
 
 input[type="checkbox"] {
@@ -122,4 +179,50 @@ input[type="checkbox"] {
       width: 100%;
     }
   }
+}
+
+.save_info {
+  display: flex;
+  align-items: center;
+  color: $Text-Black;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  span {
+    margin-left: 16px;
+  }
+}
+
+.wrap-label-name,
+.wrap-label-email,
+.wrap-label-comments,
+.wrap-label-site {
+  label {
+    color: $Text-Black;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+}
+
+.wrap-label-comments {
+  margin-bottom: 24px;
+}
+
+.wrap-label-site {
+  margin-bottom: 24px;
+}
+
+.wrap-comments-btn {
+  padding-top: 32px;
+  display: flex;
+  justify-content: center;
 }
