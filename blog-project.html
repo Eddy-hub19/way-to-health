@@ -266,11 +266,49 @@
       </div>
     </section>
 
-    <!-- <section class="comments">
+    <section class="comments">
       <div class="container">
         <h1 class="comments__title">Коментарі</h1>
+        <div class="comments-info">
+          <h2 class="comments-info__title">Залишити відповідь</h2>
+          <p class="comments-info__descr">*Обов’язкові до заповнення поля.
+            Ваша e-mail адреса не оприлюднюватиметься</p>
+        </div>
+
+        <div class="content-bg">
+          <form action="#" method="post" class="form">
+            <div class="comments-wrap">
+              <div>
+                <label for="name">Ім’я*</label>
+                <input type="text" id="name" name="name" placeholder="Як до Вас звертатись" required>
+              </div>
+              <div>
+                <label for="email">Імейл*</label>
+                <input type="email" id="email" name="email" placeholder="Як до Вас звертатись" required>
+              </div>
+            </div>
+            <div>
+              <label for="comment">Коментар</label>
+              <textarea id="comment" name="comment" rows="4"></textarea>
+            </div>
+            <div>
+              <label for="website">Сайт</label>
+              <input type="text" id="website" name="website">
+            </div>
+
+            <label class="" style="display: flex;">
+              <div class="save_info">
+                <input type="checkbox" name="save_info"> Зберегти моє ім’я, e-mail, та адресу сайту в цьому браузері для
+                моїх подальших коментарів.
+              </div>
+            </label>
+
+            <button class="btn" type="submit">Опублікувати коментар</button>
+          </form>
+        </div>
+
       </div>
-    </section> -->
+    </section>
 
   </main>
 
