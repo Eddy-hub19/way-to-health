@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".swiper", {
     direction: "horizontal",
-    loop: false,
-    autoplay: false,
+    loop: true,
+    autoplay: true,
     speed: 1300,
     clickable: true,
     slidesPerView: "1", // Автоматическое определение количества видимых слайдов

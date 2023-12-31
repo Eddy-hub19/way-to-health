@@ -1,5 +1,6 @@
 .contacts {
   margin-top: 35px;
+
   &__title {
     color: $Text-Blue;
     font-family: Montserrat;
@@ -13,8 +14,8 @@
 .contacts-list {
   margin: 0 auto;
   max-width: 840px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 64px;
+  padding-bottom: 48px;
 
   &__subtitle {
     color: $Text-Black;
@@ -29,12 +30,30 @@
   &__content {
     max-width: 845px;
   }
+}
 
-  &__item {
+.contacts-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
 
-    &--content {
-      display: flex;
-    }
+  &__tel {
+    color: $Text-Black;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 12px;
+  }
+  &__name {
+    margin-left: 32px;
+    color: $Text-Black;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
 
