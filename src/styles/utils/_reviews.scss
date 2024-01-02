@@ -30,7 +30,7 @@
 }
 
 @mixin desktop {
-  @include media-query(1440px, 2560px) {
+  @media (min-width: 1440px) {
     @content;
   }
 }
