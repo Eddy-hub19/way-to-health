@@ -138,27 +138,29 @@ label {
   margin-bottom: 16px;
 }
 
-input,
-textarea {
-  resize: none;
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  padding: 15px 16px;
-  gap: 10px;
-  border-radius: 8px;
-  border: 1px solid $Stroke;
-  background: #fff;
-  color: $Text-Placeholder;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+.blog-project {
+  input,
+  textarea {
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 15px 16px;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid $Stroke;
+    background: #fff;
+    color: $Text-Placeholder;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 
-  @include mobile {
-    font-size: 12px;
+    @include mobile {
+      font-size: 12px;
+    }
   }
 }
 
