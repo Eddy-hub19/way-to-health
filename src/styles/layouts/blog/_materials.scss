@@ -97,7 +97,10 @@
 
 .materials-list-link {
   display: flex;
-  flex-direction: column;
+
+  @include mobile {
+    flex-direction: column;
+  }
 }
 
 .pagination {
